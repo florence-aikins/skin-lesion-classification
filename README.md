@@ -6,6 +6,55 @@ A deep learning project that compares a custom Convolutional Neural Network (CNN
 
 Skin cancer is one of the most common forms of cancer worldwide, and early diagnosis is essential for improving patient outcomes. This project investigates the use of deep learning models to automatically classify dermoscopic images as benign or malignant.
 
+For this project, the classes were converted into binary labels:
+
+### Binary Classes
+
+| Label | Class |
+|-------|--------|
+| 0 | Benign |
+| 1 | Malignant |
+
+
+| Original Diagnosis | Label |
+|-------------------|-------|
+| Melanoma (mel) | Malignant (1) |
+| Basal Cell Carcinoma (bcc) | Malignant (1) |
+| Actinic Keratosis (akiec) | Malignant (1) |
+| Benign Keratosis (bkl) | Benign (0) |
+| Melanocytic Nevus (nv) | Benign (0) |
+| Dermatofibroma (df) | Benign (0) |
+| Vascular Lesions (vasc) | Benign (0) |
+
+
+## Project Workflow
+
+- Data loading
+- Exploratory Data Analysis (EDA)
+- Missing value treatment
+- Image preprocessing
+- Image resizing
+- Data augmentation
+- Stratified train-validation-test split
+- Transfer learning
+- Model training
+- Model evaluation
+
+
+## Exploratory Data Analysis
+
+EDA included:
+- Dataset overview
+- Missing value analysis
+- Age distribution
+- Sex distribution
+- Lesion localization
+- Diagnosis distribution
+- Benign vs malignant distribution
+- Correlation heatmap
+- Sample skin lesion images
+- Image dimension analysis
+
 Three models were developed and evaluated:
 
 -  Custom CNN
@@ -20,12 +69,6 @@ The models were compared using multiple evaluation metrics to determine which ar
 **Dataset:** HAM10000 (Human Against Machine with 10,000 Training Images)
 **Source:** https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
 
-### Binary Classes
-
-| Label | Class |
-|-------|--------|
-| 0 | Benign |
-| 1 | Malignant |
 
 ### Dataset Split
 
